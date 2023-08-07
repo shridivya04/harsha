@@ -1,0 +1,544 @@
+1.1 Modal window:
+shri.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<title>Window Model</title>
+<link rel="stylesheet" href=";lxzmlm.css">
+</head>
+<body>
+
+<section class="box-model-1">
+<div>
+<img src="C:\tulip" alt="image" height="200px" >
+</div>
+<div>
+Tulip cultivation likely began in Persia (Iran) in the 10th century, and it eventually became a symbol of the Ottoman Empire. Tulips were introduced to the Western world by Augier Ghislain de Busbecq, the Viennese ambassador to Turkey, who wrote of seeing the plants in Edirne, Turkey, in 1551 and later sent some seeds to Austria. The arrival at Antwerp in 1562 of a cargo of tulip bulbs from Constantinople (now Istanbul) marked the beginning of the horticultural tulip industry in Europe. An early recipient of these flowers was French botanist Carolus Clusius, who was an avid bulb grower and is often credited with the spread of other spring bulbs, such as hyacinths and irises, across Europe. In the 1590s he established a botanic garden at the University of Leiden and cultivated tulips there. In 1596 and again in 1598, broken tulips (tulips that bloom in streaks or flames of colour) were stolen from Clusius’s garden, and the genetically variable seeds of those purloined flowers became the foundation for a lively tulip trade. A speculative frenzy over tulips in the Netherlands in 1633–37 is now known as the Tulip Mania.
+</div>
+
+
+</section>
+<br>
+
+<section class="box-model-2">
+<div>
+<img src="Image1/Aloe.jpg" alt="image" height="200px" >
+</div>
+<div>
+The Aloe vera plant has been known and used for centuries for its health, beauty, medicinal and skin care properties. The name Aloe vera derives from the Arabic word “Alloeh” meaning “shining bitter substance,” while “vera” in Latin means “true.” 2000 years ago, the Greek scientists regarded Aloe vera as the universal panacea. The Egyptians called Aloe “the plant of immortality.” Today, the Aloe vera plant has been used for various purposes in dermatology.Aloe vera has been used for medicinal purposes in several cultures for millennia: Greece, Egypt, India, Mexico, Japan and China.1 Egyptian queens Nefertiti and Cleopatra used it as part of their regular beauty regimes. Alexander the Great, and Christopher Columbus used it to treat soldiers’ wounds. The first reference to Aloe vera in English was a translation by John Goodyew in A.D. 1655 of Dioscorides’ Medical treatise De Materia Medica.2 By the early 1800s, Aloe vera was in use as a laxative in the United States, but in the mid-1930s, a turning point occurred when it was successfully used to treat chronic and severe radiation dermatitis.
+</div>
+
+
+</section>
+
+<br>
+
+<section class="box-model-3">
+<div>
+<img src="Image1/cactus.jpg" alt="image" height="200px" >
+</div>
+<div>
+A cactus is a kind of a plant adapted to hot, dry climates Plants which live this kind of life-style are called xerophytes. Most are succulents, which store water.Cacti are members of the plant family Cactaceae, in the order Caryophyllales. There are about 127 genera, with over 1750 known species. Almost all of them are native to the Americas, from Patagonia in the south to parts of western Canada in the north. The species Rhipsalis baccifera also grows in Africa and Sri Lanka.Many cacti live in dry places, such as deserts. Most cacti have sharp thorns (stickers) and thick skin. There are many shapes and sizes of cacti. Some are short and round; others are tall and thin. Many cactus flowers are big and beautiful. Some bloom at night and are pollinated by moths and bats. Some cactus fruits are brightly coloured and good to eat: many animals eat cactus fruits.
+Theophrastus was the first to use the word cactus: It comes from Ancient Greek κάκτος, kaktos. Theophrastus used it for a spiny plant whose identity is not known for sure.Cacti are part of an important food chain in dry, hot climates. Now cacti have spread to many other parts of the world, and many people like to grow them in pots or gardens.
+</div>
+</section>
+<br>
+</body>
+</html>
+  
+1.2 Modal window
+shri.css
+
+.box-model-1{
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid black;
+background-color: lavender;
+max-width: 700px;
+}
+.box-model-1 div{
+margin: 12px;
+}
+.box-model-2{
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid black;
+background-color: lavender;
+max-width: 700px;
+}
+.box-model-2 div{
+margin: 12px;
+}
+
+.box-model-3{
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid black;
+background-color: lavender;
+max-width: 700px;
+}
+.box-model-3 div{
+margin: 12px;
+}
+
+
+2.1 Responsive web
+
+dance.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<style>
+		/* Styling the body */
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		/* Styling the background image by
+		giving its url and position */
+		.container {
+			height: 100vh;
+			width: 100%;
+			background-image: url(
+'https://media.geeksforgeeks.org/wp-content/uploads/20210402235143/background.jpg');
+
+			/* Image used: */
+			background-size: cover;
+			background-position: center;
+			position: relative;
+		}
+
+		/* Styling the list tags to the
+		right of the navigation bar */
+		.nav li {
+			float: right;
+			list-style: none;
+		}
+
+		/* Styling the anchor tags of
+		the navigation bar */
+		.nav a {
+			list-style: none;
+			height: 50px;
+			line-height: 50px;
+			font-size: 1rem;
+			font-weight: 550;
+			display: block;
+			padding: 5px 35px;
+			color: black;
+			text-decoration: none;
+		}
+
+		/* Giving position and margin
+		to the content-div */
+		.content {
+			width: 100%;
+			position: absolute;
+			top: 45%;
+		}
+
+		/* Styling the left-col by
+		giving margin */
+		.left-col {
+			margin-left: 11%;
+		}
+
+		/* Styling the my sound placed
+		in the left-col */
+		.left-col h1 {
+			font-size: 50px;
+			color: crimson;
+		}
+
+		/* Styling the right-col */
+		.right-col {
+			float: right;
+			margin-right: 10%;
+			margin-top: -5%;
+			display: flex;
+			align-items: center;
+		}
+
+		/* Styling the text in the right-col */
+		.right-col p {
+			font-size: 21px;
+			color: black;
+			font-weight: 650;
+			margin-right: 20px;
+		}
+
+		/* Styling the cursor type
+		of the icon to pointer */
+		#icon {
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<ul class="nav">
+			<li><a href="cnt.html">CONTACT</a></li>
+			<li><a href="sjk.html">DANCE</a></li>
+			<li><a href="abt.html">ABOUT</a></li>
+		</ul>
+	</div>
+
+	<div class="content">
+		<div class="left-col">
+			<h1>DANCE</h1>
+		</div>
+
+		<div class="right-col">
+
+
+		</div>
+	</div>
+
+	<audio id="mysound">
+		<source src="media/music.mp3" type="audio/mp3">
+	</audio>
+
+	<script>
+		let mysound = document.getElementById("mysound");
+		let icon = document.getElementById("icon");
+
+		// Creating a function that will change
+		// pause to play and vice-versa
+		icon.onclick = function () {
+			if (mysound.paused) {
+
+				// If paused then play the
+				// music and change the image
+				mysound.play();
+				icon.src =
+"https://media.geeksforgeeks.org/wp-content/uploads/20210402235545/Pause.png";
+			} else {
+
+				// If playing then pause the
+				// music and change the image
+				mysound.pause();
+				icon.src =
+"https://media.geeksforgeeks.org/wp-content/uploads/20210402235520/play.png";
+			}
+		}
+	</script>
+</body>
+</html>
+
+2.2 Responsive web
+
+abt.html
+
+<!doctype html>
+<html>
+<head>
+
+<title> About us page </title>
+
+<style>
+	article
+	{
+		font-family: verdana;
+		display: inline;
+		font-size: 20px;
+		font-color:#0E1241;
+	}
+</style>
+</head>
+<body class="about">
+
+<div style="font-family: comic sans ms; font-style: italic; color: green; font-size: 40px; text-shadow: 1px 1px 2px #000000;">
+
+<br><br>
+<div style="font-family: verdana; font-style: italic; color: #131119; font-size: 26px; text-shadow: 1px 1px 2px #ffafff; "> 
+
+
+<img src="Image1/mmusic.jpg">
+<br>
+<br>
+<br>
+<section>
+	<div style="font-family: verdana; font-size:37px; "> About </div>
+<br>
+<article>
+Dance connects us to society and culture in many universal and personal ways. It deepens our understanding of the world and ourselves. Synthesising personal knowledge and experiences with dance movements reinforces us to perceive the feelings and ideas evoked in a dance form. Dance makes us feel happy. When we dance, all our worries and stress go away. We get lost in pleasure and joy. Dance is also an exercise that provides numerous benefits to our health, such as improving blood circulation, developing muscles, promoting greater flexibility, improving body posture etc. People who dance daily are always fit and cheerful. That’s why dancers are very less likely to fall sick.Dance helps us to connect to our inner selves. It provides us with mental peace and awakens the consciousness of our inner beauty. It helps develop self-confidence and self-esteem in a stimulating environment. Dance makes us feel more energetic and enthusiastic. It makes the brain learn things faster, so our capability to grasp new things increases.
+</article>
+
+</section>
+<br>
+<br>
+</body>
+</html>
+
+2.3 Responsive web
+
+contact.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="Image1/music.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+          <label for="lname">Contact Number</label>
+        <input type="text" id="lname" name="lastname" placeholder="Enter your mobile number">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+			<option value="india">India</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Enter something special about us!!" style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+2.4 Responsive web
+
+dance.css
+
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+
+//import compass
+@import "compass";
+
+//colors
+$primary-color   : #FF512F;
+$secondary-color : #333;
+$form-bg         : #fff;
+
+
+//contact form
+.contact-form{
+    margin-top: 30px;
+    .input-block{
+        background-color: rgba(white, .8);
+        border: solid 1px $primary-color;
+        width: 100%;
+        height: 60px;
+        padding: 25px;
+        position: relative;
+        margin-bottom: 20px;
+        @include transition(all 0.3s ease-out);
+        &.focus{
+            background-color: $form-bg;
+            border: solid 1px darken($primary-color, 10%);
+        }
+        &.textarea{
+            height: auto;
+            .form-control{
+                height: auto;
+                resize: none;
+            }
+        }
+        label{
+            position: absolute;
+            left: 25px;
+            top: 25px;
+            display: block;
+            margin: 0;
+            font-weight: 300;
+            z-index: 1;
+            color: $secondary-color;
+            font-size: 18px;
+            line-height: 10px;
+        }
+        .form-control{
+            background-color: transparent;
+            padding: 0;
+            border: none;
+            @include border-radius(0);
+            @include box-shadow(none);
+            height: auto;
+            position: relative;
+            z-index: 2;
+            font-size: 18px;
+            color: $secondary-color;
+        }
+        .form-control:focus{
+            label{
+                top: 0;
+            }
+        }
+    }
+    .square-button{
+        background-color: rgba(white, .8);
+        color: darken($primary-color, 10%);
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        @include border-radius(2px);
+        @include transition(all 0.3s ease);
+        padding: 0 60px;
+        height: 60px;
+        border: none;
+        width: 100%;
+        &:hover,
+        &:focus{
+            background-color: white;
+        }
+    }
+}
+
+//tablet and above devices
+@media (min-width: 768px) { 
+  .contact-wrap{
+    width: 60%;
+    margin: auto;
+  }
+}
+
+
+
+
+//////////////////////////
+  /*----page styles---*/
+//////////////////////////
+body{
+  @include background-image(linear-gradient(to right, $primary-color, #DD2476));
+  font-family: 'Roboto', sans-serif;
+}
+.contact-wrap{
+  padding: 15px;
+}
+
+h1{
+  background-color: white;
+  color: lighten($primary-color, 10%);
+  padding: 40px;
+  margin: 0 0 50px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  small{
+    font-size: 18px;
+    display: block;
+    text-transform: none;
+    font-weight: 300;
+    margin-top: 10px;
+    color: lighten($primary-color, 10%);
+  }
+}
+.made-with-love{
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+  i{
+    font-style: normal;
+    color: #F50057;
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+  }
+  a{
+    color: #fff;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
